@@ -12,7 +12,7 @@ var _ = 10;
 var Name = "anju";
 var name = "Amit";
 
-// var anju dutta = "hello";
-var anju_dutta = "hello";
-var anju$dutta = "hello";
+// var anju singh = "hello";
+var anju_singh = "hello";
+var anju$singh = "hello";
 var anjuu1232 = "hello";

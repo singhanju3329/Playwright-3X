@@ -17,9 +17,9 @@ var _ = 10;
 var Name = "anju";
 var name = "Amit";
 
-// var anju dutta = "hello";
-var anju_dutta = "hello";
-var anju$dutta = "hello";
+// var anju singh = "hello";
+var anju_singh = "hello";
+var anju$singh = "hello";
 var anjuu1232 = "hello";
 ```
 
@@ -36,7 +36,7 @@ An **identifier** is the name given to a variable, function, class, or property.
 | Rule                                      | Allowed ✅                          | Not Allowed ❌                     | Why                                                        |
 |--------------------------------------------|--------------------------------------|--------------------------------------|-------------------------------------------------------------|
 | **First character**                       | letter, `_`, or `$`                 | a digit                              | `var 45 = 34;` → parser reads `45` as a number literal      |
-| **Remaining characters**                  | letters, digits, `_`, `$`           | spaces, hyphens, most symbols        | `var anju dutta` is parsed as two separate tokens         |
+| **Remaining characters**                  | letters, digits, `_`, `$`           | spaces, hyphens, most symbols        | `var anju singh` is parsed as two separate tokens         |
 | **Case sensitivity**                      | `Name` and `name` are two variables | assuming they're the same           | JS is case-sensitive end to end                             |
 | **Reserved keywords**                     | `total`, `data1`                    | `var`, `class`, `if`, `return`, etc. | Keywords are reserved by the language spec (see keyword notes) |
 | **Spaces / hyphens**                      | use `_` or camelCase instead         | `first-name`, `first name`           | `-` is parsed as subtraction; space breaks the token          |
@@ -72,9 +72,9 @@ var name = "Amit";
 
 ### 4. Spaces break identifiers, underscores don't
 ```js
-// var anju dutta = "hello";   // ❌ SyntaxError
-var anju_dutta = "hello";      // ✅
-var anju$dutta = "hello";      // ✅
+// var anju singh = "hello";   // ❌ SyntaxError
+var anju_singh = "hello";      // ✅
+var anju$singh = "hello";      // ✅
 ```
 A space splits one identifier into two illegal tokens. `_` and `$` are the only "joiners" JS understands inside a name.
 

@@ -2,7 +2,7 @@ var name = "Anju";
 
 var firstName = "Anju";
 var This_is_a_very_long_name_variable = "Anju";
-var lastName = "Dutta"; // CamelCase
+var lastName = "Singh"; // CamelCase
 
 // Naming Conventions (Cases)
 // ============================================

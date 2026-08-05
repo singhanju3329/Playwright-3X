@@ -271,7 +271,7 @@ let 变量 = "Chinese characters";
 
 /**
  *  JSDoc-style comment
- *  Author : Anju Dutta
+ *  Author : Anju Singh
  */
 var g = 10; // cmd + /, ctrl + /
 ```
@@ -395,7 +395,7 @@ s += "Dev";
 console.log(s);              // "Hi, Dev"
 
 console.log("Hello" + "World");        // "HelloWorld"  → concatenation
-console.log("HELLO", "Prrammod");      // "HELLO Prrammod" → multi-arg, space added
+console.log("HELLO", "Anju");      // "HELLO Anju" → multi-arg, space added
 console.log(1, 2, 3, 4, "Hello", true);
 
 // Template literal
@@ -1549,7 +1549,7 @@ var greeting = "Hello!";
 
 // let — TDZ, throws instead
 // console.log(username);
-// let username = "Dutta";
+// let username = "Singh";
 // ReferenceError: Cannot access 'username' before initialization
 
 // TDZ inside a block
