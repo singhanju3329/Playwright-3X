@@ -14,6 +14,6 @@ const greet2 = (name2) => `Hello, ${name2}!`;
 // Remove the keyword function, remove the keyword return, remove the curly braces, and use the =>
 
 
-console.log(greet("Pramod"));
-console.log(greet1("Pramod"));
-console.log(greet2("Pramod"));
+console.log(greet("Anju"));
+console.log(greet1("Anju"));
+console.log(greet2("Anju"));

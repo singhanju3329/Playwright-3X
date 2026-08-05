@@ -2,12 +2,12 @@
 //     console.log(_1);
 // }
 
-// for (let pramod = 0; pramod > 1; pramod++) {
-//     console.log(pramod);
+// for (let anju = 0; anju > 1; anju++) {
+//     console.log(anju);
 // }
 
-// for (let pramod = 0; ; pramod++) {
-//     console.log(pramod);
+// for (let anju = 0; ; anju++) {
+//     console.log(anju);
 // }
 
 for (let somya = 0; somya < 18; somya++) {

@@ -1,7 +1,7 @@
-var name = "Pramod";
+var name = "Anju";
 
-var firstName = "Pramod";
-var This_is_a_very_long_name_variable = "Pramod";
+var firstName = "Anju";
+var This_is_a_very_long_name_variable = "Anju";
 var lastName = "Dutta"; // CamelCase
 
 // Naming Conventions (Cases)
@@ -35,4 +35,4 @@ let nCount = 5;           // number
 let arrItems = [];        // array
 
 
-let strFirstName = "pramod";
+let strFirstName = "anju";

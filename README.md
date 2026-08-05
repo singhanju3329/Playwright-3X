@@ -271,7 +271,7 @@ let 变量 = "Chinese characters";
 
 /**
  *  JSDoc-style comment
- *  Author : Pramod Dutta
+ *  Author : Anju Dutta
  */
 var g = 10; // cmd + /, ctrl + /
 ```
@@ -476,7 +476,7 @@ flowchart TD
 // Inward nesting — works, but harder to read
 let age = 26;
 let enjoy = age > 18 ? (age > 26 ? "Drink" : "No") : false;
-console.log(`Can pramod Drink? : ${enjoy}`);
+console.log(`Can anju Drink? : ${enjoy}`);
 
 // Flat ladder — preferred. First match wins, so order matters.
 let statusCode = 404;
@@ -592,8 +592,8 @@ console.log(val);            // "NANDANI Milk"  (null -> fallback)
 let apiResponse = null;
 console.log(apiResponse ?? "{}");   // "{}"  (missing -> fallback)
 
-let name = "Pramod";
-console.log(name ?? "{}");   // "Pramod"  (present -> kept)
+let name = "Anju";
+console.log(name ?? "{}");   // "Anju"  (present -> kept)
 ```
 
 | Left value | `left \|\| right` | `left ?? right` |
@@ -1145,14 +1145,14 @@ console.log(getResult(45)); // "fail"
 function sayHello(name) {   // name = parameter (the placeholder)
     console.log(name);
 }
-sayHello("Pramod");         // "Pramod" = argument (the real value)
+sayHello("Anju");         // "Anju" = argument (the real value)
 sayHello("Siba");
 ```
 
 | Term | Means |
 |------|-------|
 | Parameter | The placeholder in the definition — `function f(name)` |
-| Argument | The real value at the call site — `f("Pramod")` |
+| Argument | The real value at the call site — `f("Anju")` |
 | `return` | Hands a value back to the caller and exits the function |
 | No `return` | Caller receives `undefined` |
 
@@ -1175,7 +1175,7 @@ flowchart TD
     Q1 -->|Yes| Q3{"Returns a value?"}
     Q2 -->|No| T1["Type 1 — greet&#40;&#41; → undefined"]
     Q2 -->|Yes| T3["Type 3 — getEnv&#40;&#41; → 'staging'"]
-    Q3 -->|No| T2["Type 2 — greetByName&#40;'Pramod'&#41; → undefined"]
+    Q3 -->|No| T2["Type 2 — greetByName&#40;'Anju'&#41; → undefined"]
     Q3 -->|Yes| T4["Type 4 — sum&#40;4,5&#41; → 9"]
 ```
 
@@ -1211,7 +1211,7 @@ console.log(greetTpl("Alice"));   // "Hello. Alice"
 | Type | Params | Return | Example | Value at call site |
 |:----:|:------:|:------:|---------|--------------------|
 | 1 | No | No | `greet()` | `undefined` |
-| 2 | Yes | No | `greetByName("Pramod")` | `undefined` |
+| 2 | Yes | No | `greetByName("Anju")` | `undefined` |
 | 3 | No | Yes | `getEnv()` | `"staging"` |
 | 4 | Yes | Yes | `sumOfTwoNumbers(4,5)` | `9` |
 
@@ -1247,7 +1247,7 @@ const greet1 = function (name1) { return `Hello, ${name1}!`; };
 // 3. Arrow — implicit return, one expression, no braces
 const greet2 = (name2) => `Hello, ${name2}!`;
 
-console.log(greet("Pramod"), greet1("Pramod"), greet2("Pramod")); // all identical
+console.log(greet("Anju"), greet1("Anju"), greet2("Anju")); // all identical
 
 // Implicit return — no braces, value falls out
 const doubleMe = (a) => a * 2;
@@ -1363,7 +1363,7 @@ console.log(hasError(...responseCodes2));  // true
 
 **Q&A — why use this?**
 - **Q: Why add a final `else` when the `if`s already cover the ranges?** A: Because they usually don't. Without it, `getStatus(301)` falls off the end and returns `undefined` — the `else` makes the gap explicit as `"unknown"`.
-- **Q: Can I return an array or object?** A: Yes, `return` takes any single value — `return [2, 2, 3, 5, 4]` or `return { name: "pramod" }`. To hand back several values, wrap them in one array or object.
+- **Q: Can I return an array or object?** A: Yes, `return` takes any single value — `return [2, 2, 3, 5, 4]` or `return { name: "anju" }`. To hand back several values, wrap them in one array or object.
 - **Q: What's the gotcha?** A: Calling `getStatus(200);` on its own line computes the string and throws it away. Assign it or log it — and never put code after `return`, it is unreachable.
 
 ```mermaid
@@ -1511,9 +1511,9 @@ function getUserStatus() {
 }
 
 // var leaks out of the block — the if body overwrites the outer value
-var a = "Pramod";
+var a = "Anju";
 if (true) {
-    console.log(a);   // "Pramod"
+    console.log(a);   // "Anju"
     a = "temp";
 }
 console.log(a);       // "temp"  — same variable, function-scoped

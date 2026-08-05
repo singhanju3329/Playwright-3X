@@ -1,4 +1,4 @@
-var a = "Pramod";
+var a = "Anju";
 // 10,000lines 
 if(true){
     console.log(a); 
@@ -8,7 +8,7 @@ if(true){
 // Temporal Dead Zone
 
 // Global Scope
-// a = "Pramod"
+// a = "Anju"
 // Enter Block , Block Scope
 //  a = TDZ (exist but not initialized)
 // console.log(a);

@@ -9,10 +9,10 @@ var ab123 = 23;
 // var 45 = 34;
 var _ = 10;
 
-var Name = "pramod";
+var Name = "anju";
 var name = "Amit";
 
-// var pramod dutta = "hello";
-var pramod_dutta = "hello";
-var pramod$dutta = "hello";
-var pramodu1232 = "hello";
+// var anju dutta = "hello";
+var anju_dutta = "hello";
+var anju$dutta = "hello";
+var anjuu1232 = "hello";

@@ -47,8 +47,8 @@ console.log(b);
 var a =11;
 var a = 100;
 
-// let nn = "Pramod";
-// var nn = "Pramod"; 
+// let nn = "Anju";
+// var nn = "Anju"; 
 
 const pi = 3.14;
 console.log(pi);
