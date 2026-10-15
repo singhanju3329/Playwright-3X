@@ -2,7 +2,7 @@ import { test, expect, Locator, FrameLocator } from '@playwright/test';
 
 test('Verify Advance Custom DropDowns', async ({ page }) => {
   await page.goto('https://selectorshub.com/iframe-scenario/');
-  let frame1: FrameLocator = page.frameLocator('#pact1');
+  let frame1: FrameLocator = page.frameLocator('#pact1').first(); // page has two iframes with id pact1
   let frame2: FrameLocator = frame1.frameLocator('#pact2');
   let frame3: FrameLocator = frame2.frameLocator('#pact3');
 

@@ -4,7 +4,7 @@ test('tc#1 - Verify that the vwo page is laoded', async({page})=>{
 
     await page.goto("https://app.vwo.com",{
         waitUntil: 'domcontentloaded',
-        timeout:3000,
+        timeout:30000,
         referer:"https://sdet.live"
     });
 

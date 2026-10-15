@@ -2,6 +2,9 @@ import { test, expect } from '@playwright/test';
 import { faker } from '@faker-js/faker';
 
 
+// Fixed seed so test titles stay the same each time Playwright loads this file
+faker.seed(123);
+
 const users = faker.helpers.multiple(() => ({
     name: faker.person.fullName(),
     email: faker.internet.email().toLowerCase(),
